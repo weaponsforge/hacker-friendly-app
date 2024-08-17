@@ -28,6 +28,13 @@ The app depends these libraries and frameworks.
    | Variable Name | Description |
    | --- | --- |
    | NEXT_PUBLIC_BASE_PATH | Root directory path name that NextJS uses for assets, media and client-side routing for the app.<br>Set its value to blank `''` when working on development mode in localhost.<br><br>Set its value to the sub-directory name where the exported NextJS app is to be deployed, i.e. `/<YOUR_REPOSITORY_NAME>` when deploying on a repository (sub-directory) of a root GitHub Pages site, i.e, on<br>`https://<YOUR_GITHUB_USERNAME>.github.io/<YOUR_REPOSITORY_NAME>` |
+   | NEXT_PUBLIC_FIREBASE_WEB_API_KEY | Firebase web API key from the Firebase Project Settings configuration file. |
+   | NEXT_PUBLIC_FIREBASE_WEB_AUTHDOMAIN | Firebase web auth domain key from the Firebase Project Settings configuration file. |
+   | NEXT_PUBLIC_FIREBASE_WEB_PROJECT_ID | Firebase web project ID from the Firebase Project Settings configuration file. |
+   | NEXT_PUBLIC_FIREBASE_WEB_STORAGE_BUCKET | Firebase web storage bucket key from the Firebase Project Settings configuration file. |
+   | NEXT_PUBLIC_FIREBASE_WEB_MESSAGING_SENDER_ID | Firebase web messaging sender ID from the Firebase Project Settings configuration file. |
+   | NEXT_PUBLIC_FIREBASE_WEB_APP_ID | Firebase web web app key from the Firebase Project Settings configuration file. |
+   | NEXT_PUBLIC_FIREBASE_WEB_MEASUREMENT_ID | Firebase web measurement ID from the Firebase Project Settings configuration file. |
    | WATCHPACK_POLLING | Enables hot reload on NextJS apps running inside Docker containers on a Windows host. Set it to `true` if running Docker Desktop with WSL2 on a Windows OS. |
 
 2. Run the app on localhost using **NodeJS** ([Running with NodeJS](#running-with-nodejs)) or **Docker** ([Running with Docker](#running-with-docker))
