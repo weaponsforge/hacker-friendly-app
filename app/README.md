@@ -77,3 +77,7 @@ Checks lint errors.
 ### `npm run lint:fix`
 
 Fixes lint errors.
+
+### `npm run export`
+
+Builds and compiles the static website exporting it into the `"out"` directory.
