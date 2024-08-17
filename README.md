@@ -39,7 +39,7 @@ There is only one **Quote** object which signed-in users can edit to update the 
 
 #### User
 
-For simplicity, signing in with Google using the Firebase Authentication Google Sign-In provider will the hacker-friendly app's **Users** (content editors). They will have no Firestore document for managing and tracking users.
+For simplicity, signing in with Google using the Firebase Authentication Google Sign-In provider will create the hacker-friendly app's **Users** (content editors). They will have no Firestore document for managing and tracking users.
 
 @weaponsforge<br>
 20240816
