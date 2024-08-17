@@ -1,3 +1,5 @@
+## hacker-friendly-app / app
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ### Requirements
@@ -28,9 +30,9 @@ The app depends these libraries and frameworks.
    | NEXT_PUBLIC_BASE_PATH | Root directory path name that NextJS uses for assets, media and client-side routing for the app.<br>Set its value to blank `''` when working on development mode in localhost.<br><br>Set its value to the sub-directory name where the exported NextJS app is to be deployed, i.e. `/<YOUR_REPOSITORY_NAME>` when deploying on a repository (sub-directory) of a root GitHub Pages site, i.e, on<br>`https://<YOUR_GITHUB_USERNAME>.github.io/<YOUR_REPOSITORY_NAME>` |
    | WATCHPACK_POLLING | Enables hot reload on NextJS apps running inside Docker containers on a Windows host. Set it to `true` if running Docker Desktop with WSL2 on a Windows OS. |
 
-2. Run the app on localhost using NodeJS [Running with NodeJS](#running-with-nodejs)) or Docker ([Running with Docker](#running-with-docker))
+2. Run the app on localhost using **NodeJS** ([Running with NodeJS](#running-with-nodejs)) or **Docker** ([Running with Docker](#running-with-docker))
 
-### Running with NodeJS
+## Running with NodeJS
 
 1. Install dependencies.<br>
 `npm install`
@@ -45,7 +47,7 @@ The app depends these libraries and frameworks.
 
    You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-### Running with Docker
+## Running with Docker
 
 Run the app for local development using Docker. Navigate to the project's root directory then run:
 
