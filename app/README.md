@@ -1,3 +1,5 @@
+## hacker-friendly-app / app
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ### Requirements
@@ -22,13 +24,18 @@ The app depends these libraries and frameworks.
 
 ## Getting Started
 
-1. Install dependencies.<br>
-`npm install`
-
-2. Set up the environment variables. Create a `.env` file with reference to the `.env.example` file.
+1. Set up the environment variables. Create a `.env` file with reference to the `.env.example` file.
    | Variable Name | Description |
    | --- | --- |
    | NEXT_PUBLIC_BASE_PATH | Root directory path name that NextJS uses for assets, media and client-side routing for the app.<br>Set its value to blank `''` when working on development mode in localhost.<br><br>Set its value to the sub-directory name where the exported NextJS app is to be deployed, i.e. `/<YOUR_REPOSITORY_NAME>` when deploying on a repository (sub-directory) of a root GitHub Pages site, i.e, on<br>`https://<YOUR_GITHUB_USERNAME>.github.io/<YOUR_REPOSITORY_NAME>` |
+   | WATCHPACK_POLLING | Enables hot reload on NextJS apps running inside Docker containers on a Windows host. Set it to `true` if running Docker Desktop with WSL2 on a Windows OS. |
+
+2. Run the app on localhost using **NodeJS** ([Running with NodeJS](#running-with-nodejs)) or **Docker** ([Running with Docker](#running-with-docker))
+
+## Running with NodeJS
+
+1. Install dependencies.<br>
+`npm install`
 
 2. Run the development server:
 
@@ -39,6 +46,21 @@ The app depends these libraries and frameworks.
    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
    You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+
+## Running with Docker
+
+Run the app for local development using Docker. Navigate to the project's root directory then run:
+
+```
+# 1. Build the client and server containers for localhost development.
+docker compose -f docker-compose.dev.yml build
+
+# 2. Create and start the development client and server containers
+docker compose -f docker-compose.dev.yml up
+
+# 3. Stop and remove the development containers, networks, images and volumes
+docker compose -f docker-compose.dev.yml down
+```
 
 ## Available Scripts
 
@@ -58,5 +80,6 @@ Checks lint errors.
 
 Fixes lint errors.
 
+### `npm run export`
 
-
+Builds and compiles the static website exporting it into the `"out"` directory.

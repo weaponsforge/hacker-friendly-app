@@ -1,0 +1,19 @@
+services:
+  # NextJS exported app running on an nginx webserver
+  hacker-friendly-prod:
+    container_name: hacker-friendly-prod
+    image: weaponsforge/hacker-friendly:latest
+    restart: always
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+      target: production
+    networks:
+      - hacker-friendly-prod
+    ports:
+      - "3000:3000"
+
+networks:
+  hacker-friendly-prod:
+    name: hacker-friendly-prod
+    external: false
