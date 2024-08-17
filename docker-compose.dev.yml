@@ -1,0 +1,24 @@
+services:
+  # NextJS v14 app running on development mode
+  hacker-friendly-dev:
+    container_name: hacker-friendly-dev
+    image: weaponsforge/hacker-friendly:dev
+    env_file:
+      - ./app/.env
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+      target: development
+    networks:
+      - hacker-friendly-dev
+    volumes:
+      - ./app:/opt/app
+      - /opt/app/node_modules
+      - /opt/app/.next
+    ports:
+      - "3000:3000"
+
+networks:
+  hacker-friendly-dev:
+    name: hacker-friendly-dev
+    external: false
