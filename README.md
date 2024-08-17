@@ -59,15 +59,15 @@ Add the following GitHub Secrets to facilitate deployment to the **development**
 
 ### Firebase Project
 
-| Development | Production | Description |
-| --- | --- | --- |
-| DEV_FIREBASE_WEB_API_KEY | PROD_FIREBASE_WEB_API_KEY | Firebase web API key from the Firebase Project Settings configuration file. |
-| DEV_FIREBASE_WEB_AUTHDOMAIN | PROD_FIREBASE_WEB_AUTHDOMAIN | Firebase web auth domain key from the Firebase Project Settings configuration file. |
-| DEV_FIREBASE_WEB_PROJECT_ID | PROD_FIREBASE_WEB_PROJECT_ID | Firebase web project ID from the Firebase Project Settings configuration file. |
-| DEV_FIREBASE_WEB_STORAGE_BUCKET | PROD_FIREBASE_WEB_STORAGE_BUCKET | Firebase web storage bucket key from the Firebase Project Settings configuration file. |
-| DEV_FIREBASE_WEB_MESSAGING_SENDER_ID | PROD_FIREBASE_WEB_MESSAGING_SENDER_ID | Firebase web messaging sender ID from the Firebase Project Settings configuration file. |
-| DEV_FIREBASE_WEB_APP_ID | PROD_FIREBASE_WEB_APP_ID | Firebase web web app key from the Firebase Project Settings configuration file. |
-| DEV_FIREBASE_WEB_MEASUREMENT_ID | PROD_FIREBASE_WEB_MEASUREMENT_ID | Firebase web measurement ID from the Firebase Project Settings configuration file. |
+| Development / Production | Description |
+| --- | --- |
+| DEV_FIREBASE_WEB_API_KEY<br>PROD_FIREBASE_WEB_API_KEY | Firebase web API key from the Firebase Project Settings configuration file. |
+| DEV_FIREBASE_WEB_AUTHDOMAIN<br>PROD_FIREBASE_WEB_AUTHDOMAIN | Firebase web auth domain key from the Firebase Project Settings configuration file. |
+| DEV_FIREBASE_WEB_PROJECT_ID<br>PROD_FIREBASE_WEB_PROJECT_ID | Firebase web project ID from the Firebase Project Settings configuration file. |
+| DEV_FIREBASE_WEB_STORAGE_BUCKET<br>PROD_FIREBASE_WEB_STORAGE_BUCKET | Firebase web storage bucket key from the Firebase Project Settings configuration file. |
+| DEV_FIREBASE_WEB_MESSAGING_SENDER_ID<br>PROD_FIREBASE_WEB_MESSAGING_SENDER_ID | Firebase web messaging sender ID from the Firebase Project Settings configuration file. |
+| DEV_FIREBASE_WEB_APP_ID<br>PROD_FIREBASE_WEB_APP_ID | Firebase web web app key from the Firebase Project Settings configuration file. |
+| DEV_FIREBASE_WEB_MEASUREMENT_ID<br>PROD_FIREBASE_WEB_MEASUREMENT_ID | Firebase web measurement ID from the Firebase Project Settings configuration file. |
 
 ### Others
 
