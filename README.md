@@ -4,6 +4,8 @@ This web app, using Firebase, aims to demonstrate common Firebase security flaws
 
 Advanced sections and demos will indicate using Firebase Custom Claims and the Firebase Admin for increased Firebase security.
 
+Read the **"app/README.md"** file For more information about app installation and setup.
+
 ## The Hack-Prone Quotes of the Day App
 
 - A simple Firebase web app that displays and manages "quotes of the day."
